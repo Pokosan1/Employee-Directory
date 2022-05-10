@@ -1,0 +1,98 @@
+body {
+position: relative;
+background-color: rgb(249, 249, 252);
+padding: 25px;
+font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 28px 30px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+img {
+    border-radius: 50%;
+    margin: 25px;
+    width: 120px;
+    height: 120px;
+}
+
+
+.text-container{
+    grid-column: 2;
+    align-self: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+p {
+    font-size: 14px;
+    color: rgb(172, 170, 170);
+}
+
+h2,
+p {
+    margin: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+    }
+    
+.modal {
+    width: 300px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px;
+}
+
+.modal p {
+    margin: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    }
+
+.hidden {
+    display: none;
+    } 
