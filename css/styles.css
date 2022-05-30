@@ -2,20 +2,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
-position: absolute;
+/* position: absolute; */
 background-color: rgb(249, 249, 252);
 padding: 25px;
 font-family: 'Roboto', sans-serif;
 }
 
-.grid-container {
+.grid-container,
+h1 {
     display: grid;
+    justify-content: center;
+    /* display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    gap: 28px 30px;
+    grid-template-rows: 1fr; */
+    /* gap: 28px 30px; */
 }
 
 .card {
@@ -27,6 +31,7 @@ font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
+    margin-bottom: 10px;
    
 }
 
